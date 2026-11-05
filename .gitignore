@@ -13,4 +13,7 @@ build/
 data/
 outputs/
 .foundry/
+.copilot-azure/
+infra/main.parameters.json
+infra/main.json
 *.log

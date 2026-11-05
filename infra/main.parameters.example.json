@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceGroupName": {"value": "YOUR-EXISTING-RESOURCE-GROUP"},
+    "location": {"value": "YOUR-REGION"},
+    "environmentName": {"value": "decision-eval-dev"},
+    "appName": {"value": "YOUR-NEW-EVALUATOR-APP"},
+    "identityName": {"value": "YOUR-NEW-EVALUATOR-IDENTITY"},
+    "existingEnvironmentName": {"value": "YOUR-EXISTING-ACA-ENVIRONMENT"},
+    "existingRegistryName": {"value": "YOUR-EXISTING-ACR"},
+    "foundryAccountName": {"value": "YOUR-FOUNDRY-ACCOUNT"},
+    "foundryEndpoint": {"value": "https://YOUR-ACCOUNT.services.ai.azure.com"},
+    "containerImage": {"value": "YOUR-ACR.azurecr.io/decision-evaluator:YOUR-TAG"},
+    "sessionId": {"value": "YOUR-DEPLOYMENT-ID"},
+    "deployedBy": {"value": "YOUR-DEPLOYER"},
+    "createdAt": {"value": "YOUR-ISO-8601-CREATED-TIME"}
+  }
+}

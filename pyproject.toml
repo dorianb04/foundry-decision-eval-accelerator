@@ -8,19 +8,21 @@ version = "0.1.0"
 description = "Microsoft Foundry endpoint evaluator backed by Microsoft-Decision-1"
 requires-python = ">=3.11"
 dependencies = [
-  "azure-ai-projects>=2.10.0,<3",
+  "azure-core>=1.35,<2",
   "azure-identity>=1.25,<2",
   "aiohttp>=3.12,<4",
   "fastapi>=0.115,<1",
   "httpx>=0.28,<1",
+  "pydantic>=2.10,<3",
   "uvicorn>=0.34,<1",
 ]
 
 [project.optional-dependencies]
+foundry = ["azure-ai-projects>=2.10.0,<3"]
 dev = ["pytest>=8.4,<10", "ruff>=0.14,<1"]
 
 [project.scripts]
-foundry-eval = "foundry_decision_eval.cli:main"
+foundry-eval = "foundry_decision_eval.main:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/foundry_decision_eval"]

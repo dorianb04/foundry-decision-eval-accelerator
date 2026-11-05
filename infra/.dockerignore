@@ -1,0 +1,9 @@
+**
+!Dockerfile
+!.dockerignore
+!pyproject.toml
+!src/
+!src/foundry_decision_eval/
+!src/foundry_decision_eval/*.py
+!examples/
+!examples/rubrics.json
