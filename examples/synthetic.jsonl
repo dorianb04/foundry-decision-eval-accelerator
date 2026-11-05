@@ -1,0 +1,3 @@
+{"query":"What is the capital of France?","response":"Paris is the capital of France.","context":"The capital of France is Paris."}
+{"query":"When does the library close?","response":"The library closes at midnight.","context":"The library closes at 18:00 Monday through Friday."}
+{"query":"Which colors are available?","response":"Blue and red are available, and delivery is free.","context":"The product comes in blue and red. Delivery costs depend on destination."}
