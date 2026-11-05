@@ -18,12 +18,18 @@ def register_evaluators(
 ) -> list[dict[str, str]]:
     definitions = []
     for rubric in rubrics:
+        data_schema = {
+            "type": "object",
+            "properties": {field: {} for field in rubric.required_fields},
+            "required": rubric.required_fields,
+        }
         definitions.append(
             (
                 rubric.name,
                 {
                     "type": "endpoint",
                     "connection_name": connection_name,
+                    "data_schema": data_schema,
                 },
             )
         )
@@ -60,11 +66,7 @@ def register_evaluators(
                                 "max_value": 100.0,
                             }
                         },
-                        "data_schema": {
-                            "type": "object",
-                            "properties": {field: {} for field in rubric.required_fields},
-                            "required": rubric.required_fields,
-                        },
+                        "data_schema": data_schema,
                     },
                 )
             )

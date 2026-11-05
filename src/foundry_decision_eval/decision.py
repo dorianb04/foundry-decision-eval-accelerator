@@ -25,6 +25,7 @@ class DecisionClient:
             origin.scheme != "https"
             or not origin.hostname
             or origin.username
+            or origin.password
             or origin.path not in ("", "/")
             or origin.query
             or origin.fragment

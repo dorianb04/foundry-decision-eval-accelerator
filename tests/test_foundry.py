@@ -31,3 +31,19 @@ def test_registration_never_overwrites_an_existing_evaluator():
             project, [Rubric(name="existing", question="Relevant?", type="noul")], "connection"
         )
     project.evaluators.create_version.assert_not_called()
+
+
+def test_endpoint_and_prompt_declare_the_same_input_schema():
+    project = MagicMock()
+    project.evaluators.list_versions.return_value = iter([])
+    project.evaluators.create_version.side_effect = [
+        SimpleNamespace(name="new", version="1"),
+        SimpleNamespace(name="llm-new", version="1"),
+    ]
+    register_evaluators(project, [Rubric(name="new", question="Relevant?", type="noul")], "c")
+    endpoint, prompt = [
+        call.kwargs["evaluator_version"]["definition"]
+        for call in project.evaluators.create_version.call_args_list
+    ]
+    assert endpoint["data_schema"] == prompt["data_schema"]
+    assert endpoint["data_schema"]["required"] == ["query", "response"]

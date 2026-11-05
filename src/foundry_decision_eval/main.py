@@ -122,7 +122,10 @@ def create_app(
             return respond(
                 error_result("authentication_error", "Could not acquire an Azure inference token")
             )
-        except (ValueError, KeyError, TypeError, IndexError):
+        except ValueError as exc:
+            logger.warning("Evaluation rejected: %s", exc)
+            return respond(error_result("invalid_evaluation", str(exc)))
+        except (KeyError, TypeError, IndexError):
             return respond(
                 error_result(
                     "invalid_evaluation", "Missing mapped fields or invalid model response"

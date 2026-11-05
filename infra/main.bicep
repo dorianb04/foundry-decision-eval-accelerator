@@ -3,39 +3,31 @@ targetScope = 'subscription'
 param resourceGroupName string
 param location string
 param environmentName string
-param appName string
-param identityName string
-param existingEnvironmentName string
-param existingRegistryName string
+param functionName string
+param planName string
+param storageName string
 param foundryAccountName string
 param foundryEndpoint string
-param containerImage string
+param deployerObjectId string
 param sessionId string
 param deployedBy string
 param createdAt string
-param deployApp bool = true
-@minValue(0)
-@maxValue(1)
-param minReplicas int = 0
 @secure()
 param evaluatorApiKey string
 @secure()
 param evaluatorConfigJson string = ''
 
-module adapter './modules/adapter.bicep' = {
-  name: '${appName}-resources'
+module evaluator './modules/function.bicep' = {
+  name: '${functionName}-resources'
   scope: resourceGroup(resourceGroupName)
   params: {
     location: location
-    appName: appName
-    identityName: identityName
-    existingEnvironmentName: existingEnvironmentName
-    existingRegistryName: existingRegistryName
+    functionName: functionName
+    planName: planName
+    storageName: storageName
     foundryAccountName: foundryAccountName
     foundryEndpoint: foundryEndpoint
-    containerImage: containerImage
-    deployApp: deployApp
-    minReplicas: minReplicas
+    deployerObjectId: deployerObjectId
     evaluatorApiKey: evaluatorApiKey
     evaluatorConfigJson: evaluatorConfigJson
     tags: {
@@ -48,6 +40,6 @@ module adapter './modules/adapter.bicep' = {
   }
 }
 
-output endpoint string = adapter.outputs.endpoint
-output appResourceId string = adapter.outputs.appResourceId
-output identityResourceId string = adapter.outputs.identityResourceId
+output endpoint string = evaluator.outputs.endpoint
+output functionResourceId string = evaluator.outputs.functionResourceId
+output storageResourceId string = evaluator.outputs.storageResourceId

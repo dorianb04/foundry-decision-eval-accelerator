@@ -1,10 +1,12 @@
 # Foundry Decision evaluation accelerator
 
-A small Python package that exposes **Microsoft-Decision-1 as a Foundry endpoint evaluator**. One container serves several configurable rubrics. Foundry runs those alongside native LLM prompt evaluators on the same stored outputs.
+A small Python package that exposes **Microsoft-Decision-1 as a Foundry endpoint evaluator**. A thin Azure Functions entry point serves several configurable rubrics. Foundry runs those alongside native LLM prompt evaluators on the same stored outputs.
 
 ## Code
 
 ```text
+function_app.py    Azure Functions adapter
+host.json          Function routing/runtime configuration
 src/foundry_decision_eval/
   main.py         FastAPI endpoint and authentication
   decision.py     Decision API client and score conversion
@@ -19,6 +21,8 @@ examples/
 
 No separate evaluation framework, custom dataset registry, or agent-generation pipeline. Foundry owns runs and results.
 
+`function_app.py` adapts the same FastAPI application to Azure Functions in two lines. Authentication, scoring, rubrics, and Foundry helpers stay in the package rather than being duplicated in the Function. `host.json` preserves the `/evaluate` route without an extra `/api` prefix.
+
 ## Local use
 
 Python 3.11+:
@@ -26,7 +30,7 @@ Python 3.11+:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install -e ".[foundry,dev]"
+python -m pip install -e ".[functions,foundry,dev]"
 $env:AZURE_AI_RESOURCE_ENDPOINT="https://YOUR-ACCOUNT.services.ai.azure.com"
 $env:DECISION_DEPLOYMENT="Decision-1"
 $env:AZURE_CREDENTIAL_MODE="cli"
@@ -66,13 +70,13 @@ Set `EVALUATORS_CONFIG` to a JSON rubric file, or `EVALUATORS_CONFIG_JSON` to it
 
 Decision-1 is **not chat completions**: the client calls `/providers/microsoft/v1/systemone` on the resource origin with your deployment name and Entra audience `https://cognitiveservices.azure.com`. It returns no written rationale: `reason` is null, with raw scores/probabilities in `properties`. Errors have null scores and cannot pass. Total inference is bounded to 25 seconds inside Foundry's documented 30-second deadline.
 
-The current Foundry preview runtime can require `status: "Completed"` and a string `reason`, unlike the linked Learn schema's lowercase status and nullable reason. The container deployment enables `FOUNDRY_PREVIEW_COMPAT=1` for that runtime: successful results use `"Completed"` and an empty reason (not an invented explanation); errors return non-2xx with the explicit error payload. The default local contract remains the documented `0.0.1` schema.
+The current Foundry preview runtime can require `status: "Completed"` and a string `reason`, unlike the linked Learn schema's lowercase status and nullable reason. The deployment enables `FOUNDRY_PREVIEW_COMPAT=1` for that runtime: successful results use `"Completed"` and an empty reason (not an invented explanation); errors return non-2xx with the explicit error payload. The default local contract remains the documented `0.0.1` schema.
 
 ## Use in Foundry
 
-Host the container over HTTPS and configure an authenticated Foundry connection to `/evaluate`. This repository does not silently create cloud resources, permissions, credentials, or connections.
+Deploy the Function over HTTPS and configure an authenticated Foundry connection to `/evaluate`. This repository does not silently create cloud resources, permissions, credentials, or connections.
 
-`infra/Dockerfile` packages only the runtime dependencies, not the optional Foundry SDK. `infra/main.bicep` deploys into an **existing** resource group, Container Apps Consumption environment, and registry. Copy `infra/main.parameters.example.json` to the ignored `infra/main.parameters.json`, supply the API key as a secure deployment parameter, and pass a real versioned image. The template creates only a dedicated identity, its two resource-scoped grants, and the evaluator app. Default scale is 0–1 replicas; warm it during evaluations to avoid cold-start timeouts.
+`infra/main.bicep` deploys into an **existing** resource group and reuses the existing Foundry account. It creates a 512-MB Flex Consumption Function, its plan, and private AAD-authenticated storage for the host and source package. The Function has its own managed identity and narrowly scoped inference/storage grants. Copy `infra/main.parameters.example.json` to the ignored `infra/main.parameters.json` and supply the API key as a secure deployment parameter. Publish a sanitized Python source zip with remote dependency installation; no Docker or ACR build is needed. Default maximum scale is one instance with no always-ready instances.
 
 ```powershell
 $env:AZURE_AI_PROJECT_ENDPOINT="https://YOUR-ACCOUNT.services.ai.azure.com/api/projects/YOUR-PROJECT"
@@ -92,15 +96,16 @@ The SDK helpers use `azure-ai-projects>=2.10.0`: catalog CRUD is now under `proj
 
 Decision results expose observed input/output token usage and `wall_time_ms` for authentication, HTTP, inference, and parsing. This is **judge latency**, not original answer-generation latency. Native LLM evaluator outputs are retained by Foundry; compare their recorded usage/timing against Decision on the same rows and rubrics.
 
-Apply the current deployment/region token prices to observed usage, and report container/logging/build costs separately. Missing prices or timing remain unknown, not zero. Model agreement is not quality ground truth: validate disagreements against independent human-reviewed labels before drawing quality conclusions. Probabilities are not claimed to be calibrated, and five smoke rows cannot establish a ranking.
+Apply the current deployment/region token prices to observed usage, and report Function/storage/logging costs separately. Missing prices or timing remain unknown, not zero. Model agreement is not quality ground truth: validate disagreements against independent human-reviewed labels before drawing quality conclusions. Probabilities are not claimed to be calibrated, and five smoke rows cannot establish a ranking.
 
 ## Checks and references
 
 ```powershell
 python -m pytest -q
-python -m ruff check src tests examples
+python -m ruff check src tests examples function_app.py
 ```
 
 - [Decision API](https://learn.microsoft.com/azure/foundry/foundry-models/how-to/use-foundry-models-microsoft-decision)
 - [Foundry endpoint-evaluator contract](https://learn.microsoft.com/azure/foundry/concepts/evaluation-evaluators/custom-evaluators#endpoint-based-evaluators)
 - [Native cloud evaluation SDK](https://learn.microsoft.com/azure/foundry/observability/how-to/cloud-evaluation)
+- [Functions evaluator reference supplied for this accelerator](https://github.com/Jbetts05/foundry-evaluation-sample)
