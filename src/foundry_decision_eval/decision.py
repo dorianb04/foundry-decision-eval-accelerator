@@ -39,9 +39,12 @@ class DecisionClient:
     async def evaluate(
         self, rubric: Rubric, item: dict[str, Any], sample: dict[str, Any] | None = None
     ) -> dict[str, Any]:
+        received = {"item": sorted(item), "sample": sorted(sample or {})}
+        # Foundry may deliver some mapped fields (e.g. response) under data.sample.
+        item = {**(sample or {}), **item}
         missing = [field for field in rubric.required_fields if item.get(field) in (None, "")]
         if missing:
-            raise ValueError("Missing mapped fields: " + ", ".join(missing))
+            raise ValueError(f"Missing mapped fields: {', '.join(missing)}; received {received}")
         question: dict[str, Any] = {"type": rubric.type, "instructions": rubric.question}
         if rubric.criteria is not None:
             question["criteria"] = rubric.criteria
