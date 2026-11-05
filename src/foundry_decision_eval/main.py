@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 import secrets
 from contextlib import asynccontextmanager
@@ -14,6 +15,8 @@ from fastapi.responses import JSONResponse
 from .contracts import EvaluationRequest, Rubric, error_result
 from .decision import DecisionClient
 from .evaluators import load_rubrics
+
+logger = logging.getLogger(__name__)
 
 
 def create_app(
@@ -63,8 +66,19 @@ def create_app(
 
     app = FastAPI(title="Foundry Decision evaluator", lifespan=lifespan, docs_url=None)
 
+    def respond(result):
+        if os.environ.get("FOUNDRY_PREVIEW_COMPAT") != "1":
+            return result
+        if result["status"] == "error":
+            return JSONResponse(status_code=502, content=result)
+        return {**result, "status": "Completed", "reason": result.get("reason") or ""}
+
     @app.exception_handler(RequestValidationError)
     async def invalid_request(_request: Request, _exc: RequestValidationError):
+        logger.warning(
+            "Invalid evaluator request fields: %s",
+            [(error["loc"], error["type"]) for error in _exc.errors()],
+        )
         return JSONResponse(
             status_code=422, content=error_result("invalid_request", "Expected schema 0.0.1")
         )
@@ -85,24 +99,34 @@ def create_app(
             raise HTTPException(status_code=401, detail="Invalid or missing evaluator API key")
         rubric = app.state.rubrics.get((request.evaluator_name, request.evaluator_version))
         if rubric is None:
-            return error_result("unknown_evaluator", "Evaluator name/version is not configured")
+            return respond(
+                error_result("unknown_evaluator", "Evaluator name/version is not configured")
+            )
         try:
-            return await app.state.decision.evaluate(rubric, request.data.item, request.data.sample)
+            return respond(
+                await app.state.decision.evaluate(rubric, request.data.item, request.data.sample)
+            )
         except (TimeoutError, httpx.TimeoutException):
-            return error_result("timeout", "Decision exceeded the bounded inference budget")
+            return respond(
+                error_result("timeout", "Decision exceeded the bounded inference budget")
+            )
         except httpx.HTTPStatusError as exc:
-            return error_result(
-                "model_http_error", f"Decision returned HTTP {exc.response.status_code}"
+            return respond(
+                error_result(
+                    "model_http_error", f"Decision returned HTTP {exc.response.status_code}"
+                )
             )
         except httpx.RequestError:
-            return error_result("connection_error", "Could not connect to Decision")
+            return respond(error_result("connection_error", "Could not connect to Decision"))
         except ClientAuthenticationError:
-            return error_result(
-                "authentication_error", "Could not acquire an Azure inference token"
+            return respond(
+                error_result("authentication_error", "Could not acquire an Azure inference token")
             )
         except (ValueError, KeyError, TypeError, IndexError):
-            return error_result(
-                "invalid_evaluation", "Missing mapped fields or invalid model response"
+            return respond(
+                error_result(
+                    "invalid_evaluation", "Missing mapped fields or invalid model response"
+                )
             )
 
     return app

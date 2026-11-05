@@ -66,6 +66,8 @@ Set `EVALUATORS_CONFIG` to a JSON rubric file, or `EVALUATORS_CONFIG_JSON` to it
 
 Decision-1 is **not chat completions**: the client calls `/providers/microsoft/v1/systemone` on the resource origin with your deployment name and Entra audience `https://cognitiveservices.azure.com`. It returns no written rationale: `reason` is null, with raw scores/probabilities in `properties`. Errors have null scores and cannot pass. Total inference is bounded to 25 seconds inside Foundry's documented 30-second deadline.
 
+The current Foundry preview runtime can require `status: "Completed"` and a string `reason`, unlike the linked Learn schema's lowercase status and nullable reason. The container deployment enables `FOUNDRY_PREVIEW_COMPAT=1` for that runtime: successful results use `"Completed"` and an empty reason (not an invented explanation); errors return non-2xx with the explicit error payload. The default local contract remains the documented `0.0.1` schema.
+
 ## Use in Foundry
 
 Host the container over HTTPS and configure an authenticated Foundry connection to `/evaluate`. This repository does not silently create cloud resources, permissions, credentials, or connections.
@@ -84,7 +86,7 @@ The examples are dry-run by default. Registration creates new names only and ref
 
 `evaluate.py --data PATH` accepts JSONL stored outputs or a JSON array/`{"items":[...]}` export. It submits a seeded subset inline with **no model or agent target**, so it never regenerates answers. To compare configurations, reuse the same row IDs and questions from each configuration's saved run. Existing datasets that contain only response IDs need their already-generated run outputs, not substituted ground truth.
 
-The SDK helpers use `azure-ai-projects>=2.10.0`: catalog CRUD is now under `project.evaluators`, while older Learn examples use `project.beta.evaluators`.
+The SDK helpers use `azure-ai-projects>=2.10.0`: catalog CRUD is now under `project.evaluators`, while older Learn examples use `project.beta.evaluators`. They include the service-required `Foundry-Features: Evaluations=V1Preview` opt-in header.
 
 ## Cost, latency, quality
 

@@ -92,6 +92,7 @@ resource app 'Microsoft.App/containerApps@2026-07-01' = if (deployApp) {
             { name: 'PORT', value: '8080' }
             { name: 'AZURE_AI_RESOURCE_ENDPOINT', value: foundryEndpoint }
             { name: 'DECISION_DEPLOYMENT', value: 'Decision-1' }
+            { name: 'FOUNDRY_PREVIEW_COMPAT', value: '1' }
             { name: 'AZURE_CLIENT_ID', value: identity.properties.clientId }
             { name: 'EVALUATOR_API_KEY', secretRef: 'evaluator-api-key' }
           ], empty(evaluatorConfigJson) ? [] : [

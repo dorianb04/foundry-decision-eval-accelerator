@@ -6,6 +6,8 @@ from azure.core.exceptions import ResourceNotFoundError
 
 from .contracts import Rubric
 
+EVALUATION_HEADERS = {"Foundry-Features": "Evaluations=V1Preview"}
+
 
 def register_evaluators(
     project: AIProjectClient,
@@ -77,6 +79,7 @@ def register_evaluators(
     for name, definition in definitions:
         evaluator = project.evaluators.create_version(
             name=name,
+            headers=EVALUATION_HEADERS,
             evaluator_version={
                 "name": name,
                 "categories": ["quality"],
@@ -121,7 +124,7 @@ def create_evaluation(
                 }
             )
     fields = sorted({field for rubric in rubrics for field in rubric.required_fields})
-    with project.get_openai_client() as client:
+    with project.get_openai_client(default_headers=EVALUATION_HEADERS) as client:
         return client.evals.create(
             name=name,
             testing_criteria=criteria,
@@ -140,7 +143,7 @@ def create_evaluation(
 def create_run(
     project: AIProjectClient, eval_id: str, items: list[dict[str, Any]], name: str
 ) -> Any:
-    with project.get_openai_client() as client:
+    with project.get_openai_client(default_headers=EVALUATION_HEADERS) as client:
         return client.evals.runs.create(
             eval_id=eval_id,
             name=name,

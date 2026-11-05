@@ -13,6 +13,9 @@ def test_native_decision_and_llm_evaluators_use_the_same_fields():
     create_evaluation(project, "comparison", [rubric], llm_deployment="existing-judge")
     client = project.get_openai_client.return_value.__enter__.return_value
     criteria = client.evals.create.call_args.kwargs["testing_criteria"]
+    assert project.get_openai_client.call_args.kwargs["default_headers"] == {
+        "Foundry-Features": "Evaluations=V1Preview"
+    }
     assert criteria[0]["data_mapping"] == criteria[1]["data_mapping"]
     assert criteria[0]["type"] == "azure_ai_evaluator"
     create_run(project, "eval-id", [{"response": "stored"}], "smoke")

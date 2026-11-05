@@ -111,6 +111,20 @@ def test_model_timeout_returns_foundry_error_not_a_score(rubric):
         assert result["status"] == "error" and result["passed"] is None and result["score"] is None
 
 
+def test_preview_response_compatibility_is_explicit(rubric, monkeypatch):
+    monkeypatch.setenv("FOUNDRY_PREVIEW_COMPAT", "1")
+    with TestClient(
+        create_app(rubrics=[rubric], decision=FakeDecision(), api_key="fixture")
+    ) as client:
+        result = client.post("/evaluate", json=body(), headers={"api-key": "fixture"}).json()
+        assert result["status"] == "Completed" and result["reason"] == ""
+    with TestClient(
+        create_app(rubrics=[rubric], decision=FakeDecision(fail=True), api_key="fixture")
+    ) as client:
+        result = client.post("/evaluate", json=body(), headers={"api-key": "fixture"})
+        assert result.status_code == 502 and result.json()["score"] is None
+
+
 def test_request_validation_does_not_echo_dataset_content(rubric):
     with TestClient(
         create_app(rubrics=[rubric], decision=FakeDecision(), api_key="fixture")
