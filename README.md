@@ -78,6 +78,8 @@ Deploy the Function over HTTPS and configure an authenticated Foundry connection
 
 `infra/main.bicep` deploys into an **existing** resource group and reuses the existing Foundry account. It creates a 512-MB Flex Consumption Function, its plan, and private AAD-authenticated storage for the host and source package. The Function has its own managed identity and narrowly scoped inference/storage grants. Copy `infra/main.parameters.example.json` to the ignored `infra/main.parameters.json` and supply the API key as a secure deployment parameter. Publish a sanitized Python source zip with remote dependency installation; no Docker or ACR build is needed. Default maximum scale is one instance with no always-ready instances.
 
+The storage public endpoint is disabled. A private-storage networking overlay is required before publishing: Function outbound VNet integration, a Blob private endpoint and private DNS. The evaluator's API-key HTTPS endpoint and the AAD-protected SCM publishing endpoint remain reachable by Foundry and the publishing client. The client sends the zip to SCM; the deployment service writes the package to private storage. Sending a zip is not proof that it was built, deployed, or live-verified.
+
 ```powershell
 $env:AZURE_AI_PROJECT_ENDPOINT="https://YOUR-ACCOUNT.services.ai.azure.com/api/projects/YOUR-PROJECT"
 python examples\register.py --connection YOUR-CONNECTION

@@ -8,6 +8,8 @@ param planName string
 param storageName string
 param foundryAccountName string
 param foundryEndpoint string
+@description('Private overlay output. Set before publishing to private storage.')
+param integrationSubnetId string = ''
 param deployerObjectId string
 param sessionId string
 param deployedBy string
@@ -27,6 +29,7 @@ module evaluator './modules/function.bicep' = {
     storageName: storageName
     foundryAccountName: foundryAccountName
     foundryEndpoint: foundryEndpoint
+    integrationSubnetId: integrationSubnetId
     deployerObjectId: deployerObjectId
     evaluatorApiKey: evaluatorApiKey
     evaluatorConfigJson: evaluatorConfigJson

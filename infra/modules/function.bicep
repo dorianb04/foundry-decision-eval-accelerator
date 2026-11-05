@@ -4,6 +4,7 @@ param planName string
 param storageName string
 param foundryAccountName string
 param foundryEndpoint string
+param integrationSubnetId string
 param deployerObjectId string
 param tags object
 @secure()
@@ -26,7 +27,7 @@ resource storage 'Microsoft.Storage/storageAccounts@2026-09-01' = {
     allowBlobPublicAccess: false
     allowSharedKeyAccess: false
     defaultToOAuthAuthentication: true
-    publicNetworkAccess: 'Enabled'
+    publicNetworkAccess: 'Disabled'
   }
 }
 resource blobs 'Microsoft.Storage/storageAccounts/blobServices@2026-09-01' = {
@@ -56,6 +57,10 @@ resource function 'Microsoft.Web/sites@2026-08-01' = {
     serverFarmId: plan.id
     httpsOnly: true
     publicNetworkAccess: 'Enabled'
+    virtualNetworkSubnetId: empty(integrationSubnetId) ? null : integrationSubnetId
+    outboundVnetRouting: empty(integrationSubnetId) ? null : {
+      applicationTraffic: true
+    }
     functionAppConfig: {
       runtime: { name: 'python', version: '3.12' }
       deployment: {

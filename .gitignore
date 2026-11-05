@@ -14,6 +14,9 @@ data/
 outputs/
 .foundry/
 .copilot-azure/
+.azure/
 infra/main.parameters.json
+infra/private-network.parameters.json
+infra/private-network.json
 infra/main.json
 *.log
