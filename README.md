@@ -80,6 +80,56 @@ Deploy the Function over HTTPS and configure an authenticated Foundry connection
 
 The storage public endpoint is disabled. A private-storage networking overlay is required before publishing: Function outbound VNet integration, a Blob private endpoint and private DNS. The evaluator's API-key HTTPS endpoint and the AAD-protected SCM publishing endpoint remain reachable by Foundry and the publishing client. The client sends the zip to SCM; the deployment service writes the package to private storage. Sending a zip is not proof that it was built, deployed, or live-verified.
 
+### Deploy
+
+`scripts/deploy.ps1` (PowerShell) or `scripts/deploy.sh` (bash, needs Python 3) runs the whole sequence below in order. Both need Azure CLI (signed in, with rights to deploy into the target resource group and to assign roles on the Foundry account and the new storage account) and an existing resource group and Foundry account with a `Decision-1` deployment.
+
+```powershell
+# 1. Fill the two parameter files (both stay out of Git).
+#    deployerObjectId = your own object ID: az ad signed-in-user show --query id -o tsv
+Copy-Item infra\main.parameters.example.json infra\main.parameters.json
+Copy-Item infra\private-network.parameters.example.json infra\private-network.parameters.json
+
+# 2. Choose the evaluator API key (never written to Git; sent to Azure in a temporary file that is deleted)
+$env:EVALUATOR_API_KEY = [Convert]::ToBase64String((1..48 | ForEach-Object { Get-Random -Maximum 256 }) -as [byte[]])
+
+# 3. Check without touching Azure: compiles both templates, validates parameters, builds the package
+.\scripts\deploy.ps1 -CheckOnly
+
+# 4. Preview the core deployment (nothing is created)
+.\scripts\deploy.ps1 -WhatIf
+
+# 5. Deploy
+.\scripts\deploy.ps1
+```
+
+The same flow in bash (Linux, macOS, WSL, Git Bash):
+
+```bash
+cp infra/main.parameters.example.json infra/main.parameters.json
+cp infra/private-network.parameters.example.json infra/private-network.parameters.json
+export EVALUATOR_API_KEY="$(openssl rand -base64 48)"
+scripts/deploy.sh --check-only   # no Azure call
+scripts/deploy.sh --what-if      # preview, nothing is created
+scripts/deploy.sh                # deploy (--skip-publish: infrastructure only)
+```
+
+The order matters because the storage account has no public access:
+
+| Step | What | Command |
+|---|---|---|
+| 1 | Function, plan, private storage, identity, role assignments | `az deployment sub create -f infra/main.bicep -p @infra/main.parameters.json` |
+| 2 | VNet, Blob private endpoint, private DNS | `az deployment group create -g <rg> -f infra/private-network.bicep -p @infra/private-network.parameters.json` |
+| 3 | Function VNet integration | step 1 again, with `integrationSubnetId` from step 2 |
+| 4 | Source package | `scripts/package.ps1` or `scripts/package.sh` (writes `outputs/function.zip`: `function_app.py`, `host.json`, `requirements.txt`, `pyproject.toml`, `src/`) |
+| 5 | Publish with remote dependency install | `az functionapp deployment source config-zip -g <rg> -n <function> --src outputs/function.zip --build-remote true` |
+
+Then check readiness (`curl https://<function>.azurewebsites.net/health`), create the Foundry connection to `/evaluate` with the same API key, and register the evaluators below.
+
+There is no `azd up`: the private-network step must run between two deployments of the core template, which a single `azd provision` cannot express. The script sends only the files listed in step 4, uses the rubrics from `examples/rubrics.json` (override with `-Rubrics`), and creates no resource group, Foundry account, key or connection.
+
+Status: the templates compile and the package builds (`-CheckOnly` / `--check-only`). The sequence has not been run end to end against a subscription in this repository; run the what-if first, and treat a successful upload as unproven until `/health` answers and one evaluation succeeds.
+
 ```powershell
 $env:AZURE_AI_PROJECT_ENDPOINT="https://YOUR-ACCOUNT.services.ai.azure.com/api/projects/YOUR-PROJECT"
 python examples\register.py --connection YOUR-CONNECTION
