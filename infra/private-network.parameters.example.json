@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {"value": "YOUR-REGION"},
+    "storageName": {"value": "YOUR-EXISTING-FUNCTION-STORAGE"},
+    "vnetName": {"value": "vnet-decision-eval"},
+    "nsgName": {"value": "nsg-decision-eval"},
+    "privateEndpointName": {"value": "pep-decision-eval"},
+    "tags": {"value": {"environment": "dev"}}
+  }
+}

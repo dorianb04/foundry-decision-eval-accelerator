@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceGroupName": {"value": "YOUR-EXISTING-RESOURCE-GROUP"},
+    "location": {"value": "YOUR-REGION"},
+    "environmentName": {"value": "decision-eval-dev"},
+    "functionName": {"value": "YOUR-NEW-FUNCTION-NAME"},
+    "planName": {"value": "YOUR-NEW-FLEX-PLAN"},
+    "storageName": {"value": "YOURNEWSTORAGENAME"},
+    "foundryAccountName": {"value": "YOUR-EXISTING-FOUNDRY-ACCOUNT"},
+    "foundryEndpoint": {"value": "https://YOUR-ACCOUNT.services.ai.azure.com"},
+    "deployerObjectId": {"value": "YOUR-DEPLOYER-OBJECT-ID"},
+    "sessionId": {"value": "YOUR-DEPLOYMENT-ID"},
+    "deployedBy": {"value": "YOUR-DEPLOYER"},
+    "createdAt": {"value": "YOUR-ISO-8601-CREATED-TIME"}
+  }
+}

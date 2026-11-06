@@ -1,0 +1,12 @@
+.git*
+.venv*
+.local
+outputs
+data
+.env*
+.copilot-azure
+infra
+tests
+__pycache__
+*.pyc
+*.md
