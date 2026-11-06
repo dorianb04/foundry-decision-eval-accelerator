@@ -2,7 +2,7 @@
 
 **Support de présentation technique.**
 
-[Présentation autonome](decider-sans-rediger.html). 9 séquences en 3 actes, exactement 420 secondes. Les animations démarrent seules à l’entrée de chaque slide ; les trois vidéos officielles s’ouvrent au clic dans un cadre pointant vers commandline.microsoft.com ; aucun autre appel réseau.
+[Présentation autonome](decision-models-foundry-evaluator-fr.html). 9 séquences en 3 actes, exactement 420 secondes. Les animations démarrent seules à l’entrée de chaque slide ; les trois vidéos officielles s’ouvrent au clic dans un cadre pointant vers commandline.microsoft.com ; aucun autre appel réseau.
 
 ## Commandes
 
