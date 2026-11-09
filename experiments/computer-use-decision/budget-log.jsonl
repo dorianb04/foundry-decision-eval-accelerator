@@ -1,0 +1,424 @@
+{"ts": 1794237270.784, "kind": "decision", "n": 1, "purpose": "smoke", "attempt": 0}
+{"ts": 1794237275.191, "kind": "llm", "n": 1, "purpose": "smoke", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237277.106, "kind": "llm", "n": 2, "purpose": "smoke", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237688.708, "kind": "decision", "n": 2, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237690.846, "kind": "decision", "n": 3, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237691.266, "kind": "decision", "n": 4, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237691.638, "kind": "decision", "n": 5, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237692.027, "kind": "decision", "n": 6, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237692.072, "kind": "decision", "n": 7, "purpose": "step:decision-1", "attempt": 1}
+{"ts": 1794237745.865, "kind": "decision", "n": 8, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237747.671, "kind": "decision", "n": 9, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237748.087, "kind": "decision", "n": 10, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237748.494, "kind": "decision", "n": 11, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237748.888, "kind": "decision", "n": 12, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237791.058, "kind": "decision", "n": 13, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237793.256, "kind": "decision", "n": 14, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237793.628, "kind": "decision", "n": 15, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237793.939, "kind": "decision", "n": 16, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237794.308, "kind": "decision", "n": 17, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237794.544, "kind": "llm", "n": 3, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237796.219, "kind": "decision", "n": 18, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237796.641, "kind": "decision", "n": 19, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237797.017, "kind": "decision", "n": 20, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237797.478, "kind": "llm", "n": 4, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237798.812, "kind": "llm", "n": 5, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237799.791, "kind": "llm", "n": 6, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237800.7, "kind": "llm", "n": 7, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237801.978, "kind": "llm", "n": 8, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237802.979, "kind": "llm", "n": 9, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237818.472, "kind": "decision", "n": 21, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237821.885, "kind": "decision", "n": 22, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237822.408, "kind": "decision", "n": 23, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237822.814, "kind": "decision", "n": 24, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237823.202, "kind": "decision", "n": 25, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237823.376, "kind": "llm", "n": 10, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237825.343, "kind": "decision", "n": 26, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237825.691, "kind": "decision", "n": 27, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237826.005, "kind": "decision", "n": 28, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237826.536, "kind": "decision", "n": 29, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237826.915, "kind": "decision", "n": 30, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237827.298, "kind": "decision", "n": 31, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237827.641, "kind": "decision", "n": 32, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237828.024, "kind": "decision", "n": 33, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237828.282, "kind": "llm", "n": 11, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237830.127, "kind": "decision", "n": 34, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237830.457, "kind": "decision", "n": 35, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237830.825, "kind": "decision", "n": 36, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237831.292, "kind": "decision", "n": 37, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237831.628, "kind": "decision", "n": 38, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237832.042, "kind": "decision", "n": 39, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237832.39, "kind": "decision", "n": 40, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237832.696, "kind": "decision", "n": 41, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237832.933, "kind": "llm", "n": 12, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237834.932, "kind": "decision", "n": 42, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237835.258, "kind": "decision", "n": 43, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237835.573, "kind": "decision", "n": 44, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237835.966, "kind": "decision", "n": 45, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237836.299, "kind": "decision", "n": 46, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237836.707, "kind": "decision", "n": 47, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237837.068, "kind": "decision", "n": 48, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237837.424, "kind": "decision", "n": 49, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237837.587, "kind": "llm", "n": 13, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237839.327, "kind": "decision", "n": 50, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237839.737, "kind": "decision", "n": 51, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237840.051, "kind": "decision", "n": 52, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237840.453, "kind": "decision", "n": 53, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237840.834, "kind": "decision", "n": 54, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237841.212, "kind": "decision", "n": 55, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237841.573, "kind": "decision", "n": 56, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237841.851, "kind": "decision", "n": 57, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237842.097, "kind": "llm", "n": 14, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237844.53, "kind": "decision", "n": 58, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237844.859, "kind": "decision", "n": 59, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237845.297, "kind": "decision", "n": 60, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237845.712, "kind": "decision", "n": 61, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237845.939, "kind": "llm", "n": 15, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237847.984, "kind": "decision", "n": 62, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237848.196, "kind": "llm", "n": 16, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237850.183, "kind": "decision", "n": 63, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237850.557, "kind": "decision", "n": 64, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237850.918, "kind": "decision", "n": 65, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237851.145, "kind": "llm", "n": 17, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237852.906, "kind": "decision", "n": 66, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237853.267, "kind": "decision", "n": 67, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237853.64, "kind": "decision", "n": 68, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237853.981, "kind": "decision", "n": 69, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237854.378, "kind": "decision", "n": 70, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237854.592, "kind": "llm", "n": 18, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237856.539, "kind": "decision", "n": 71, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237856.708, "kind": "llm", "n": 19, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237858.548, "kind": "decision", "n": 72, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237859.048, "kind": "decision", "n": 73, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237859.373, "kind": "decision", "n": 74, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237859.552, "kind": "llm", "n": 20, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237861.551, "kind": "decision", "n": 75, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237861.879, "kind": "decision", "n": 76, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237862.221, "kind": "decision", "n": 77, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237862.58, "kind": "decision", "n": 78, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237862.999, "kind": "decision", "n": 79, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237863.234, "kind": "llm", "n": 21, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237865.605, "kind": "decision", "n": 80, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237865.803, "kind": "llm", "n": 22, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237868.182, "kind": "decision", "n": 81, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237868.614, "kind": "decision", "n": 82, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237868.993, "kind": "decision", "n": 83, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237869.214, "kind": "llm", "n": 23, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237871.304, "kind": "decision", "n": 84, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237871.645, "kind": "decision", "n": 85, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237871.942, "kind": "decision", "n": 86, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237872.256, "kind": "decision", "n": 87, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237872.7, "kind": "decision", "n": 88, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237872.914, "kind": "llm", "n": 24, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237874.684, "kind": "decision", "n": 89, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237874.911, "kind": "llm", "n": 25, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237876.83, "kind": "decision", "n": 90, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237877.242, "kind": "decision", "n": 91, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237877.697, "kind": "decision", "n": 92, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237877.906, "kind": "llm", "n": 26, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237880.312, "kind": "decision", "n": 93, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237880.658, "kind": "decision", "n": 94, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237881.063, "kind": "decision", "n": 95, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237881.448, "kind": "decision", "n": 96, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237881.849, "kind": "decision", "n": 97, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237882.114, "kind": "llm", "n": 27, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237884.339, "kind": "decision", "n": 98, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237884.565, "kind": "llm", "n": 28, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237886.978, "kind": "decision", "n": 99, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237887.38, "kind": "decision", "n": 100, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237887.771, "kind": "decision", "n": 101, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237887.995, "kind": "llm", "n": 29, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237889.873, "kind": "decision", "n": 102, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237890.228, "kind": "decision", "n": 103, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237890.607, "kind": "decision", "n": 104, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237891.108, "kind": "decision", "n": 105, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237891.546, "kind": "decision", "n": 106, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237891.755, "kind": "llm", "n": 30, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237893.856, "kind": "decision", "n": 107, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237894.159, "kind": "decision", "n": 108, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237894.516, "kind": "decision", "n": 109, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237895.019, "kind": "decision", "n": 110, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237895.271, "kind": "llm", "n": 31, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237897.53, "kind": "decision", "n": 111, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237897.913, "kind": "decision", "n": 112, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237898.25, "kind": "decision", "n": 113, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237898.724, "kind": "decision", "n": 114, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237898.937, "kind": "llm", "n": 32, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237901.299, "kind": "decision", "n": 115, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237901.687, "kind": "decision", "n": 116, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237902.017, "kind": "decision", "n": 117, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237902.533, "kind": "decision", "n": 118, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237902.732, "kind": "llm", "n": 33, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237904.812, "kind": "decision", "n": 119, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237905.184, "kind": "decision", "n": 120, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237905.51, "kind": "decision", "n": 121, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237906.004, "kind": "decision", "n": 122, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237906.189, "kind": "llm", "n": 34, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237908.472, "kind": "decision", "n": 123, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237908.861, "kind": "decision", "n": 124, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237909.17, "kind": "decision", "n": 125, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237909.594, "kind": "decision", "n": 126, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237909.909, "kind": "decision", "n": 127, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237910.348, "kind": "decision", "n": 128, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237910.701, "kind": "decision", "n": 129, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237911.151, "kind": "decision", "n": 130, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237911.516, "kind": "decision", "n": 131, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237911.951, "kind": "decision", "n": 132, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237912.323, "kind": "decision", "n": 133, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237912.762, "kind": "decision", "n": 134, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237913.11, "kind": "decision", "n": 135, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794237945.726, "kind": "llm", "n": 35, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237948.998, "kind": "llm", "n": 36, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237950.345, "kind": "llm", "n": 37, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237951.758, "kind": "llm", "n": 38, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237953.173, "kind": "llm", "n": 39, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237954.093, "kind": "llm", "n": 40, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237955.332, "kind": "llm", "n": 41, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237956.672, "kind": "llm", "n": 42, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237957.519, "kind": "llm", "n": 43, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237958.892, "kind": "llm", "n": 44, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237960.111, "kind": "llm", "n": 45, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237960.989, "kind": "llm", "n": 46, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237962.066, "kind": "llm", "n": 47, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237963.582, "kind": "llm", "n": 48, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237964.437, "kind": "llm", "n": 49, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237966.337, "kind": "llm", "n": 50, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237968.19, "kind": "llm", "n": 51, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237969.485, "kind": "llm", "n": 52, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237970.353, "kind": "llm", "n": 53, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237971.766, "kind": "llm", "n": 54, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237972.715, "kind": "llm", "n": 55, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237973.803, "kind": "llm", "n": 56, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237975.069, "kind": "llm", "n": 57, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237976.044, "kind": "llm", "n": 58, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237977.319, "kind": "llm", "n": 59, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237978.996, "kind": "llm", "n": 60, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237979.813, "kind": "llm", "n": 61, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237981.464, "kind": "llm", "n": 62, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237982.885, "kind": "llm", "n": 63, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237983.929, "kind": "llm", "n": 64, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237986.13, "kind": "llm", "n": 65, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237987.406, "kind": "llm", "n": 66, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237989.385, "kind": "llm", "n": 67, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237990.855, "kind": "llm", "n": 68, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794237993.628, "kind": "llm", "n": 69, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237995.045, "kind": "llm", "n": 70, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237996.55, "kind": "llm", "n": 71, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237997.55, "kind": "llm", "n": 72, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237998.53, "kind": "llm", "n": 73, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794237999.726, "kind": "llm", "n": 74, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238001.153, "kind": "llm", "n": 75, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238002.891, "kind": "llm", "n": 76, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238004.825, "kind": "llm", "n": 77, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238005.697, "kind": "llm", "n": 78, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238007.363, "kind": "llm", "n": 79, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238008.873, "kind": "llm", "n": 80, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238010.013, "kind": "llm", "n": 81, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238011.738, "kind": "llm", "n": 82, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238013.256, "kind": "llm", "n": 83, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238014.643, "kind": "llm", "n": 84, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238015.938, "kind": "llm", "n": 85, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238016.83, "kind": "llm", "n": 86, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238018.425, "kind": "llm", "n": 87, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238019.753, "kind": "llm", "n": 88, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238021.245, "kind": "llm", "n": 89, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238022.292, "kind": "llm", "n": 90, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238024.022, "kind": "llm", "n": 91, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238025.086, "kind": "llm", "n": 92, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238026.767, "kind": "llm", "n": 93, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238028.276, "kind": "llm", "n": 94, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238029.213, "kind": "llm", "n": 95, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238030.597, "kind": "llm", "n": 96, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238031.907, "kind": "llm", "n": 97, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238033.205, "kind": "llm", "n": 98, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238034.316, "kind": "llm", "n": 99, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238035.52, "kind": "llm", "n": 100, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238037.553, "kind": "llm", "n": 101, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238038.782, "kind": "llm", "n": 102, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238040.463, "kind": "llm", "n": 103, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238041.754, "kind": "llm", "n": 104, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238043.559, "kind": "llm", "n": 105, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238044.497, "kind": "llm", "n": 106, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238045.462, "kind": "llm", "n": 107, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238047.173, "kind": "llm", "n": 108, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238047.979, "kind": "llm", "n": 109, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238049.382, "kind": "llm", "n": 110, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238050.351, "kind": "llm", "n": 111, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238052.032, "kind": "llm", "n": 112, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238053.88, "kind": "llm", "n": 113, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238055.202, "kind": "llm", "n": 114, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238056.66, "kind": "llm", "n": 115, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238058.244, "kind": "llm", "n": 116, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238060.154, "kind": "llm", "n": 117, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238062.349, "kind": "llm", "n": 118, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238063.688, "kind": "llm", "n": 119, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238064.726, "kind": "llm", "n": 120, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238066.102, "kind": "llm", "n": 121, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238066.924, "kind": "llm", "n": 122, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238068.757, "kind": "llm", "n": 123, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238069.803, "kind": "llm", "n": 124, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238071.812, "kind": "llm", "n": 125, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238072.854, "kind": "llm", "n": 126, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238074.222, "kind": "llm", "n": 127, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238075.316, "kind": "llm", "n": 128, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238076.109, "kind": "llm", "n": 129, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238078.165, "kind": "llm", "n": 130, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238079.69, "kind": "llm", "n": 131, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238080.598, "kind": "llm", "n": 132, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238082.733, "kind": "llm", "n": 133, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238083.983, "kind": "llm", "n": 134, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238086.024, "kind": "llm", "n": 135, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238087.485, "kind": "llm", "n": 136, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238088.837, "kind": "llm", "n": 137, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238090.228, "kind": "llm", "n": 138, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238091.542, "kind": "llm", "n": 139, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238093.591, "kind": "llm", "n": 140, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238094.731, "kind": "llm", "n": 141, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238095.982, "kind": "llm", "n": 142, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238097.468, "kind": "llm", "n": 143, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238098.349, "kind": "llm", "n": 144, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238099.967, "kind": "llm", "n": 145, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238101.501, "kind": "llm", "n": 146, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238102.336, "kind": "llm", "n": 147, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238103.301, "kind": "llm", "n": 148, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238104.358, "kind": "llm", "n": 149, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238105.324, "kind": "llm", "n": 150, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238106.459, "kind": "llm", "n": 151, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238107.796, "kind": "llm", "n": 152, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238108.757, "kind": "llm", "n": 153, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238109.911, "kind": "llm", "n": 154, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238110.834, "kind": "llm", "n": 155, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238111.739, "kind": "llm", "n": 156, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238113.291, "kind": "llm", "n": 157, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238114.259, "kind": "llm", "n": 158, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238115.551, "kind": "llm", "n": 159, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238116.521, "kind": "llm", "n": 160, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238117.866, "kind": "llm", "n": 161, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238118.716, "kind": "llm", "n": 162, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238180.273, "kind": "llm", "n": 163, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238183.632, "kind": "llm", "n": 164, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238185.06, "kind": "llm", "n": 165, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238186.194, "kind": "llm", "n": 166, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238187.114, "kind": "llm", "n": 167, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238188.669, "kind": "llm", "n": 168, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238207.153, "kind": "llm", "n": 169, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238210.186, "kind": "llm", "n": 170, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238211.981, "kind": "llm", "n": 171, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238213.256, "kind": "llm", "n": 172, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238214.827, "kind": "llm", "n": 173, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238215.928, "kind": "llm", "n": 174, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238216.887, "kind": "llm", "n": 175, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238218.822, "kind": "llm", "n": 176, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238219.612, "kind": "llm", "n": 177, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238220.537, "kind": "llm", "n": 178, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238221.849, "kind": "llm", "n": 179, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238224.157, "kind": "llm", "n": 180, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238225.858, "kind": "llm", "n": 181, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238226.728, "kind": "llm", "n": 182, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238244.263, "kind": "llm", "n": 183, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238247.297, "kind": "llm", "n": 184, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238248.616, "kind": "llm", "n": 185, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238249.538, "kind": "llm", "n": 186, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238250.842, "kind": "llm", "n": 187, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238251.953, "kind": "llm", "n": 188, "purpose": "step:gpt-5.6-sol", "deployment": "gpt-5.6-sol", "attempt": 0}
+{"ts": 1794238263.486, "kind": "decision", "n": 136, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238265.754, "kind": "decision", "n": 137, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238266.215, "kind": "decision", "n": 138, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238266.551, "kind": "decision", "n": 139, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238266.931, "kind": "decision", "n": 140, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238267.378, "kind": "decision", "n": 141, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238269.912, "kind": "decision", "n": 142, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238272.038, "kind": "decision", "n": 143, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238272.493, "kind": "decision", "n": 144, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238272.881, "kind": "decision", "n": 145, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238273.351, "kind": "decision", "n": 146, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238273.734, "kind": "decision", "n": 147, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238276.052, "kind": "decision", "n": 148, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238278.054, "kind": "decision", "n": 149, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238278.513, "kind": "decision", "n": 150, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238278.858, "kind": "decision", "n": 151, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238279.255, "kind": "decision", "n": 152, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238279.489, "kind": "llm", "n": 189, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238281.086, "kind": "decision", "n": 153, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238281.443, "kind": "decision", "n": 154, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238281.838, "kind": "decision", "n": 155, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238282.236, "kind": "decision", "n": 156, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238282.594, "kind": "decision", "n": 157, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238283.032, "kind": "decision", "n": 158, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238283.41, "kind": "decision", "n": 159, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238283.816, "kind": "decision", "n": 160, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238284.004, "kind": "llm", "n": 190, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238285.85, "kind": "decision", "n": 161, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238286.258, "kind": "decision", "n": 162, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238286.616, "kind": "decision", "n": 163, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238288.92, "kind": "decision", "n": 164, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238291.106, "kind": "decision", "n": 165, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238291.541, "kind": "decision", "n": 166, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238291.889, "kind": "decision", "n": 167, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238292.247, "kind": "decision", "n": 168, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238292.47, "kind": "llm", "n": 191, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238294.679, "kind": "decision", "n": 169, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238295.037, "kind": "decision", "n": 170, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238295.452, "kind": "decision", "n": 171, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238295.888, "kind": "decision", "n": 172, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238296.269, "kind": "decision", "n": 173, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238296.733, "kind": "decision", "n": 174, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238297.089, "kind": "decision", "n": 175, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238297.507, "kind": "decision", "n": 176, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238297.712, "kind": "llm", "n": 192, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238299.445, "kind": "decision", "n": 177, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238299.931, "kind": "decision", "n": 178, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238300.338, "kind": "decision", "n": 179, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238302.599, "kind": "decision", "n": 180, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238304.419, "kind": "decision", "n": 181, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238304.828, "kind": "decision", "n": 182, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238305.221, "kind": "decision", "n": 183, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238305.625, "kind": "decision", "n": 184, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238305.795, "kind": "llm", "n": 193, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238307.617, "kind": "decision", "n": 185, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238308.05, "kind": "decision", "n": 186, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238308.461, "kind": "decision", "n": 187, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238308.826, "kind": "decision", "n": 188, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238309.258, "kind": "decision", "n": 189, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238309.651, "kind": "decision", "n": 190, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238310.027, "kind": "decision", "n": 191, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238310.503, "kind": "decision", "n": 192, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238310.736, "kind": "llm", "n": 194, "purpose": "writer", "deployment": "gpt-5.4-mini", "attempt": 0}
+{"ts": 1794238312.595, "kind": "decision", "n": 193, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238312.975, "kind": "decision", "n": 194, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238313.384, "kind": "decision", "n": 195, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238335.428, "kind": "decision", "n": 196, "purpose": "probe:inject-no-done", "attempt": 0}
+{"ts": 1794238337.083, "kind": "decision", "n": 197, "purpose": "probe:inject-no-done", "attempt": 0}
+{"ts": 1794238337.255, "kind": "decision", "n": 198, "purpose": "probe:inject-no-done", "attempt": 0}
+{"ts": 1794238337.41, "kind": "decision", "n": 199, "purpose": "probe:inject-no-done", "attempt": 0}
+{"ts": 1794238337.609, "kind": "decision", "n": 200, "purpose": "probe:inject-no-done", "attempt": 0}
+{"ts": 1794238354.372, "kind": "decision", "n": 201, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238356.41, "kind": "decision", "n": 202, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238356.81, "kind": "decision", "n": 203, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238357.242, "kind": "decision", "n": 204, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238357.641, "kind": "decision", "n": 205, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238358.037, "kind": "decision", "n": 206, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238358.435, "kind": "decision", "n": 207, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238358.786, "kind": "decision", "n": 208, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238359.16, "kind": "decision", "n": 209, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238359.555, "kind": "decision", "n": 210, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238359.953, "kind": "decision", "n": 211, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238360.405, "kind": "decision", "n": 212, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238360.785, "kind": "decision", "n": 213, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238361.174, "kind": "decision", "n": 214, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238361.546, "kind": "decision", "n": 215, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238381.377, "kind": "decision", "n": 216, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238383.843, "kind": "decision", "n": 217, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238384.225, "kind": "decision", "n": 218, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238384.626, "kind": "decision", "n": 219, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238384.995, "kind": "decision", "n": 220, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238385.378, "kind": "decision", "n": 221, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238385.809, "kind": "decision", "n": 222, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238386.16, "kind": "decision", "n": 223, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238386.578, "kind": "decision", "n": 224, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238386.957, "kind": "decision", "n": 225, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238387.309, "kind": "decision", "n": 226, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238387.66, "kind": "decision", "n": 227, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238388.07, "kind": "decision", "n": 228, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238388.405, "kind": "decision", "n": 229, "purpose": "step:decision-1", "attempt": 0}
+{"ts": 1794238388.784, "kind": "decision", "n": 230, "purpose": "step:decision-1", "attempt": 0}

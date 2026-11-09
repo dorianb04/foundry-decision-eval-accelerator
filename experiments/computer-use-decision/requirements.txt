@@ -1,0 +1,11 @@
+azure-core>=1.35,<2
+httpx>=0.28,<1
+pydantic>=2.10,<3
+# Pinned to the version whose Chromium build was already cached locally; any 1.5x works after `playwright install chromium`.
+playwright==1.60.0
+pytest>=8.4
+pytest-asyncio>=0.26
+# The accelerator package itself (reused: foundry_decision_eval.decision.DecisionClient).
+# Install from the repo root with:  pip install --no-deps -e ../..
+# (--no-deps avoids azure-identity/cryptography, which has no wheel on Windows ARM64;
+#  this experiment gets its Entra token from the Azure CLI instead, see cudec/clients.py)
